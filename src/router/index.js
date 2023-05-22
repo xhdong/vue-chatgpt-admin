@@ -40,7 +40,7 @@ export const constantRoutes = [
         name: 'MemberManage',
         meta: {
           title: '会员管理',
-          icon: 'fa fa-user',
+          icon: 'fa fa-diamond',
           noCache: true,
           affix: true
         }
