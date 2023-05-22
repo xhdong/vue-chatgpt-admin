@@ -1,0 +1,114 @@
+// base color
+$blue: #324157;
+$light-blue: #3a71a8;
+$red: #c03639;
+$pink: #e65d6e;
+$green: #30b08f;
+$tiffany: #4ab7bd;
+$yellow: #fec171;
+$panGreen: #30b08f;
+
+//sidebar
+$menuText: #bfcbd9;
+$menuActiveText: #4c83fc;
+$subMenuActiveText: #f4f4f5; //https://github.com/ElemeFE/element/issues/12951
+
+$menuBg: #121212;
+$menuHover: #4c83fc;
+
+$subMenuBg: #1f2d3d;
+$subMenuHover: #001528;
+
+$sideBarWidth: 240px;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+}
+
+/* font family start */
+$fontFamilyZH: 'Microsoft Yahei';
+$fontFamilyEN: 'Arial';
+/* font family end */
+
+/* font size start */
+$fontSizeBase: 14px;
+$fontSizeSmall: 12px;
+$fontSizeH1: 20px;
+$fontSizeH2: 18px;
+$fontSizeH3: 16px;
+$fontSizeH4: 14px;
+/* font size end */
+
+/* color start */
+
+/* backgorund color start */
+$backgroundColor: #09aeb0;
+/* backgorund color end */
+
+/* 链接 start */
+// 默认
+$colorLink: #4c83fc;
+// 悬浮
+$colorLinkHover: #66b1ff;
+// 选中
+$colorLinkActive: #66b1ff;
+// 禁用
+$colorLinkDisabled: #a0cfff;
+/* 链接 end */
+
+/* 状态 start */
+// 成功
+$colorSuccess: #67c23a;
+// 警告
+$colorWarning: #e6a23c;
+// 禁用
+$colorDanger: #f56c6c;
+/* 状态 end */
+
+/* 文本 start */
+// 标题系列，h1, h2, h3, h4, h5, h6
+$colorHn: #1f2f3d;
+// 普通文本，p, span
+$colorText: #606266;
+// 普通文本，p, span浅灰色
+$colorTextGray: #909399;
+// 普通文本，p, span白色
+$colorTextWhite: #fff;
+/* 文本 end */
+
+// 边框颜色
+$colorBorder: #ebeef5;
+
+// 遮罩颜色
+$colorOverlay: rgba(0, 0, 0, 0.7);
+
+/* color end */
+
+/* 元素上下间距 start */
+$gap10: 10px;
+$gap15: 15px;
+$gap20: 20px;
+// 注：在项目中可结合scss表达式语法实现更多间距值，如对某个元素设置100px的间距
+/*
+.el {
+  padding-top: $gap20 * 5
+}
+*/
+/* 元素上下间距 end */
+
+/* 圆角 start */
+$radiusBase: 4px;
+/* 圆角 end */
+
+/* zIndex start */
+$zIndex: 1000;
+/* zIndex end */

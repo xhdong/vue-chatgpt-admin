@@ -1,0 +1,102 @@
+.app-container {
+  padding: 20px;
+}
+.form-wrapper {
+  margin-bottom: 20px;
+  .line {
+    text-align: center;
+  }
+  .el-form-item {
+    margin-bottom: 18px;
+  }
+  .el-input--suffix {
+    .el-input__inner {
+      padding-right: 10px;
+    }
+  }
+  &.form-wrapper-sm {
+    .el-form-item__content {
+      width: 215px;
+    }
+  }
+  &.form-wrapper-md {
+    .el-form-item__content {
+      width: 300px;
+    }
+  }
+  &.form-wrapper-lg {
+    .el-form-item__content {
+      width: 380px;
+    }
+  }
+  &.form-wrapper-more {
+    margin-bottom: 20px;
+    .form-group {
+      &.expand {
+        height: 50px;
+        overflow: hidden;
+      }
+    }
+  }
+  .el-range-separator {
+    padding: 0;
+  }
+  .form-group {
+    .form-control {
+      width: 100%;
+    }
+  }
+  .btn-group {
+    margin-left: 100px;
+  }
+}
+.table-wrapper {
+  margin-bottom: 20px;
+  .el-table {
+    th {
+      background-color: #f5f7fa;
+    }
+    .cell {
+      text-align: center;
+    }
+  }
+}
+.page-wrapper {
+  margin-bottom: 20px;
+  overflow: hidden;
+  .el-pagination {
+    float: right;
+  }
+}
+.dialog-mi {
+  .el-dialog {
+    width: 300px;
+    .btn-group {
+      text-align: right;
+    }
+  }
+}
+.dialog-sm {
+  .el-dialog {
+    width: 500px;
+    .btn-group {
+      text-align: right;
+    }
+  }
+}
+.dialog-md {
+  .el-dialog {
+    width: 760px;
+    .btn-group {
+      text-align: right;
+    }
+  }
+}
+.dialog-lg {
+  .el-dialog {
+    width: 1000px;
+    .btn-group {
+      text-align: right;
+    }
+  }
+}
