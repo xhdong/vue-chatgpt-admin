@@ -1,6 +1,6 @@
 <template>
   <el-row class="app-container">
-    <table-data :loading="listLoading" :data="list" />
+    <table-data :loading="listLoading" :data="list" @disabled="disabledUser" />
 
     <div class="page-wrapper">
       <el-pagination
@@ -38,8 +38,12 @@ export default {
     this.fetchData()
   },
   methods: {
-    handleSizeChange(val) {},
-    handleCurrentChange(val) {},
+    handleSizeChange(val) {
+      this.pageNum = val
+    },
+    handleCurrentChange(val) {
+      this.pageNum = val
+    },
     fetchData() {
       this.listLoading = true
       getList({ id: 1 }).then(response => {
@@ -54,7 +58,7 @@ export default {
         type: 'warning'
       })
         .then(() => {
-          disabledUser(row.id).then(response => {
+          disabledUser(row.id).then(() => {
             this.$message.success('禁用成功')
             this.fetchData()
           })
